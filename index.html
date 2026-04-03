@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>內埔農工 - 寒假輔助學習課業輔導</title>
+    <title>內埔農工 - 寒假扶助學習課業輔導</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
@@ -103,7 +103,7 @@
         
         <div class="max-w-5xl mx-auto text-center relative z-10">
             <h1 class="text-4xl md:text-5xl font-black mb-6 tracking-tight">
-                國立內埔農工<br><span class="text-amber-400 font-bold">寒假輔助學習課業輔導</span>
+                國立內埔農工<br><span class="text-amber-400 font-bold">寒假扶助學習課業輔導</span>
             </h1>
             <p class="text-lg text-emerald-50 mb-10 font-medium">
                 結合原民文化與科學精神，深耕術科實作能力。<br>
@@ -256,7 +256,9 @@
             // 找到對應的標題
             const cards = document.querySelectorAll('.group');
             cards.forEach(card => {
-                if(card.querySelector('img').src === src || src.includes(card.querySelector('img').getAttribute('src'))) {
+                const img = card.querySelector('img');
+                const imgSrc = img.getAttribute('src');
+                if(src.endsWith(imgSrc)) {
                     lightboxCaption.innerText = card.querySelector('h3').innerText;
                 }
             });
