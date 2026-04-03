@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>內埔農工 - 化學丙級術科教材分析</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
+        
+        :root {
+            --paiwan-red: #b91c1c;
+            --paiwan-yellow: #f59e0b;
+            --paiwan-black: #111827;
+            --paiwan-green: #064e3b;
+        }
+
+
+        body { font-family: 'Noto Sans TC', sans-serif; background-color: #fdf6e3; }
+
+
+        .aboriginal-bg {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0L60 30L30 60L0 30Z' fill='%23b91c1c' fill-opacity='0.03'/%3E%3C/svg%3E");
+        }
+
+
+        .material-card {
+            background: white;
+            border: 2px solid var(--paiwan-black);
+            box-shadow: 6px 6px 0px var(--paiwan-black);
+        }
+
+
+        .btn-download {
+            background-color: var(--paiwan-red);
+            color: white;
+            border: 2px solid var(--paiwan-black);
+            box-shadow: 4px 4px 0px var(--paiwan-black);
+            transition: all 0.2s;
+        }
+        
+        .btn-download:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0px var(--paiwan-black);
+        }
+
+
+        .chem-badge {
+            @apply px-3 py-1 bg-amber-100 text-amber-800 border border-amber-300 font-bold text-xs rounded mr-2 mb-2;
+        }
+    </style>
+</head>
+<body class="text-slate-900 aboriginal-bg pb-20">
+
+
+    <nav class="bg-stone-900 text-white py-4 px-6 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <!-- 已將連結從 lab_gallery.html 更新為 index.html -->
+            <a href="index.html" class="hover:text-amber-400 transition-colors font-bold">
+                <i class="fas fa-home mr-2"></i> 回到實驗相簿
+            </a>
+            <h1 class="font-black text-amber-400 tracking-tighter uppercase">化學丙級術科教材庫</h1>
+            <div class="text-xs hidden sm:block">LAB SKILLS RESOURCES</div>
+        </div>
+    </nav>
+
+
+    <div class="max-w-5xl mx-auto px-4 mt-12">
+        
+        <header class="mb-12 text-center">
+            <h2 class="text-3xl font-black text-slate-900 mb-6">化學丙級術科檢定核心分析</h2>
+            <p class="text-slate-600 font-medium max-w-2xl mx-auto mb-10 leading-relaxed">
+                彙整國家術科檢定之核心教材。透過數位化重點摘要，協助學生掌握液鹼與磷酸三鈉滴定的實驗關鍵。
+            </p>
+        </header>
+
+
+        <!-- 教材一：液鹼分析 -->
+        <section class="material-card mb-12 overflow-hidden border-l-8 border-l-emerald-800">
+            <div class="p-8 flex flex-col md:flex-row justify-between items-center gap-8">
+                <div>
+                    <h3 class="text-xl font-black mb-4">液鹼中 NaOH 含量之測定</h3>
+                    <p class="text-sm text-slate-600 mb-6">重點在於強鹼中和滴定的精確度，以及對滴定終點顏色消失的掌握。</p>
+                    <a href="液鹼教材.pdf" target="_blank" class="btn-download px-6 py-3 rounded-lg font-black text-sm">
+                        <i class="fas fa-file-pdf mr-2"></i> 開啟教材分析 PDF
+                    </a>
+                </div>
+                <div class="bg-stone-50 p-6 border-2 border-dashed border-stone-300 rounded text-xs">
+                    <h4 class="font-bold mb-2 uppercase tracking-widest">扣分關鍵</h4>
+                    <p>● 滴定管氣泡排除<br>● 視線讀數精確<br>● 儀器潤洗流程</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 教材二：磷酸三鈉分析 -->
+        <section class="material-card mb-12 overflow-hidden border-l-8 border-l-red-800">
+            <div class="p-8 flex flex-col md:flex-row justify-between items-center gap-8">
+                <div>
+                    <h3 class="text-xl font-black mb-4">磷酸三鈉分段滴定分析</h3>
+                    <p class="text-sm text-slate-600 mb-6">核心在於 PP 與 MO 的連續滴定流程，理解多質子酸鹼的分段轉化。</p>
+                    <a href="磷酸三鈉教材.pdf" target="_blank" class="btn-download px-6 py-3 rounded-lg font-black text-sm bg-stone-900">
+                        <i class="fas fa-file-pdf mr-2"></i> 開啟教材分析 PDF
+                    </a>
+                </div>
+                <div class="bg-stone-50 p-6 border-2 border-dashed border-stone-300 rounded text-xs">
+                    <h4 class="font-bold mb-2 uppercase tracking-widest">操作技巧</h4>
+                    <p>● 二段滴定不可倒掉<br>● 終點判定要敏銳<br>● 計算參考 V2 體積</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="bg-stone-900 text-white p-10 mt-12 border-4 border-amber-400">
+            <h3 class="text-2xl font-black mb-4 text-amber-400">主任的話：扎根技藝，開創未來</h3>
+            <p class="text-sm leading-relaxed font-bold opacity-90">
+                實驗室的每一份教材，都是前人經驗的累積。希望內農的學子能在此基礎上，發展出更卓越的技藝。
+            </p>
+            <p class="mt-6 text-xs text-stone-500 italic">內埔農工 郭政郎主任 整理</p>
+        </section>
+
+
+    </div>
+
+
+</body>
+</html>

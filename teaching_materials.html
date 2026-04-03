@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>內埔農工 - 寒假輔導成果分析報告</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
+        
+        :root {
+            --paiwan-red: #b91c1c;
+            --paiwan-yellow: #f59e0b;
+            --paiwan-black: #111827;
+            --paiwan-green: #064e3b;
+        }
+
+
+        body { font-family: 'Noto Sans TC', sans-serif; background-color: #fdf6e3; }
+
+
+        .aboriginal-bg {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0L60 30L30 60L0 30Z' fill='%23b91c1c' fill-opacity='0.03'/%3E%3C/svg%3E");
+        }
+
+
+        .data-card {
+            background: white;
+            border: 2px solid var(--paiwan-black);
+            box-shadow: 6px 6px 0px var(--paiwan-black);
+        }
+
+
+        .aboriginal-header {
+            background-color: var(--paiwan-black);
+            color: var(--paiwan-yellow);
+            border-bottom: 4px solid var(--paiwan-red);
+        }
+
+
+        .table-header {
+            background-color: var(--paiwan-green);
+            color: white;
+        }
+
+
+        .btn-pdf {
+            background-color: #ef4444;
+            color: white;
+            border: 2px solid var(--paiwan-black);
+            box-shadow: 4px 4px 0px var(--paiwan-black);
+            transition: all 0.2s;
+        }
+        
+        .btn-pdf:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0px var(--paiwan-black);
+        }
+    </style>
+</head>
+<body class="text-slate-900 aboriginal-bg pb-20">
+
+
+    <nav class="bg-stone-900 text-white py-4 px-6 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <!-- 連結已從 lab_gallery.html 更新為 index.html -->
+            <a href="index.html" class="hover:text-amber-400 transition-colors font-bold">
+                <i class="fas fa-home mr-2"></i> 回到實驗相簿
+            </a>
+            <h1 class="font-black text-amber-400 tracking-tighter uppercase">寒假學習扶助成果報告</h1>
+            <div class="text-xs font-mono hidden sm:block">DATA ANALYSIS | JAN 2025</div>
+        </div>
+    </nav>
+
+
+    <div class="max-w-5xl mx-auto px-4 mt-12">
+        
+        <header class="mb-12 text-center">
+            <h2 class="text-3xl font-black text-slate-900 mb-6 flex justify-center items-center">
+                <span class="w-12 h-1 bg-red-700 mr-4"></span>
+                實驗報告數據彙整分析
+                <span class="w-12 h-1 bg-red-700 ml-4"></span>
+            </h2>
+            <p class="text-slate-600 font-medium max-w-2xl mx-auto mb-8 leading-relaxed">
+                彙整野保科學習扶助課程之「結果報告表」。我們從學生的數據中，看見了滴定技術與計算精確度的成長。
+            </p>
+            
+            <a href="113寒假野保科學習扶助課業輔導結果報告表.pdf" target="_blank" class="btn-pdf inline-flex items-center px-8 py-4 rounded-lg font-black">
+                <i class="fas fa-file-pdf mr-3 text-2xl"></i> 開啟原始 PDF 報告表
+            </a>
+        </header>
+
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            <div class="data-card p-6 border-l-8 border-l-red-700">
+                <h3 class="text-xl font-black mb-4 flex items-center">
+                    <i class="fas fa-flask mr-2 text-red-700"></i> 液鹼總鹼量測定
+                </h3>
+                <div class="space-y-3">
+                    <div class="flex justify-between border-b border-slate-100 pb-2">
+                        <span class="text-sm font-bold">平均 Na₂O 含量</span>
+                        <span class="font-mono font-bold text-red-700">9.45%</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="data-card p-6 border-l-8 border-l-emerald-700">
+                <h3 class="text-xl font-black mb-4 flex items-center">
+                    <i class="fas fa-vials mr-2 text-emerald-700"></i> 磷酸三鈉含量測定
+                </h3>
+                <div class="space-y-3">
+                    <div class="flex justify-between border-b border-slate-100 pb-2">
+                        <span class="text-sm font-bold">樣品平均純度</span>
+                        <span class="font-mono font-bold text-emerald-700">28.52%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <section class="data-card p-0 overflow-hidden mb-12">
+            <div class="aboriginal-header p-6 flex justify-between items-center">
+                <h3 class="font-black text-xl">學生實驗表現彙整</h3>
+            </div>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left">
+                    <thead>
+                        <tr class="table-header text-xs uppercase font-black">
+                            <th class="px-6 py-4">姓名</th>
+                            <th class="px-6 py-4">標定濃度 (M)</th>
+                            <th class="px-6 py-4">實驗結果 (%)</th>
+                            <th class="px-6 py-4">指導老師評價</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-sm font-medium">
+                        <tr class="border-b border-slate-100">
+                            <td class="px-6 py-4">楊欣妮</td>
+                            <td class="px-6 py-4 font-mono">0.1356</td>
+                            <td class="px-6 py-4 font-mono text-red-700 font-bold">8.81%</td>
+                            <td class="px-6 py-4 text-emerald-700 font-bold">● 良好</td>
+                        </tr>
+                        <tr class="border-b border-slate-100 bg-amber-50/30">
+                            <td class="px-6 py-4">邱意芹</td>
+                            <td class="px-6 py-4 font-mono">0.2900</td>
+                            <td class="px-6 py-4 font-mono text-red-700 font-bold">42.94%</td>
+                            <td class="px-6 py-4 text-emerald-700 font-bold">● 優異</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+
+        <section class="bg-emerald-900 text-white p-8 border-4 border-amber-400">
+            <h3 class="text-2xl font-black mb-6 flex items-center">
+                <i class="fas fa-feather-alt mr-3 text-amber-400"></i> 教師評析與反思
+            </h3>
+            <p class="text-sm leading-relaxed font-bold opacity-90">
+                學生在定量分析的練習中，對於滴定終點判定已有顯著進步。透過寒假輔導，同學對於化學反應與計算的連結更為緊密，為未來的專業技術士檢定奠定良好基礎。
+            </p>
+            <div class="mt-6 text-right font-mono text-xs text-amber-200">
+                指導老師：郭政郎 主任
+            </div>
+        </section>
+
+
+    </div>
+
+
+</body>
+</html>

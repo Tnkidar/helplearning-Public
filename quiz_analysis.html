@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>內埔農工 - 寒假學習扶助評量分析</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
+        
+        :root {
+            --paiwan-red: #b91c1c;
+            --paiwan-yellow: #f59e0b;
+            --paiwan-black: #111827;
+            --paiwan-green: #064e3b;
+        }
+
+
+        body { font-family: 'Noto Sans TC', sans-serif; background-color: #fdf6e3; }
+
+
+        .aboriginal-bg {
+            background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0L20 0L10 10Z' fill='%23111827' fill-opacity='0.02'/%3E%3Cpath d='M20 0L40 0L30 10Z' fill='%23b91c1c' fill-opacity='0.02'/%3E%3C/svg%3E");
+        }
+
+
+        .analysis-card {
+            background: white;
+            border: 2px solid var(--paiwan-black);
+            box-shadow: 6px 6px 0px var(--paiwan-black);
+        }
+
+
+        .topic-pill {
+            @apply px-4 py-2 bg-stone-100 border-2 border-slate-900 font-black text-xs mr-3 mb-3 inline-block;
+        }
+
+
+        .btn-pdf {
+            background-color: #ef4444;
+            color: white;
+            border: 2px solid var(--paiwan-black);
+            box-shadow: 4px 4px 0px var(--paiwan-black);
+            transition: all 0.2s;
+        }
+        
+        .btn-pdf:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0px var(--paiwan-black);
+        }
+    </style>
+</head>
+<body class="text-slate-900 aboriginal-bg pb-20">
+
+
+    <nav class="bg-stone-900 text-white py-4 px-6 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <!-- 已將連結更新為 index.html -->
+            <a href="index.html" class="hover:text-amber-400 transition-colors font-bold">
+                <i class="fas fa-home mr-2"></i> 回到實驗相簿
+            </a>
+            <h1 class="font-black text-amber-400 uppercase tracking-tighter">評量測試卷學情分析</h1>
+            <div class="text-xs font-mono hidden sm:block">SUBJECT: CHEMISTRY II</div>
+        </div>
+    </nav>
+
+
+    <div class="max-w-5xl mx-auto px-4 mt-12">
+        
+        <header class="mb-12 text-center">
+            <div class="inline-block mb-6 relative">
+                <i class="fas fa-scroll text-6xl text-red-700"></i>
+            </div>
+            <h2 class="text-3xl font-black text-slate-900 mb-6">測驗卷重點分析報告</h2>
+            <p class="text-slate-600 font-medium max-w-2xl mx-auto mb-10 leading-relaxed">
+                針對野保二班級設計之 40 題評量試卷，檢核寒假期間學習成效，掌握學生在理化計算與工業常識上的進度。
+            </p>
+            
+            <a href="114年寒假學習扶助評量測試卷-野保二.pdf" target="_blank" class="btn-pdf inline-flex items-center px-10 py-5 rounded-lg font-black text-lg">
+                <i class="fas fa-file-pdf mr-4 text-3xl"></i> 開啟原始測試卷 PDF
+            </a>
+        </header>
+
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            <div class="analysis-card p-6 bg-red-50/30">
+                <h3 class="font-black text-lg mb-4 text-red-800"><i class="fas fa-list-check mr-2"></i> 試卷結構</h3>
+                <ul class="text-sm font-bold space-y-4 text-slate-700">
+                    <li class="flex justify-between border-b-2 border-white pb-2"><span>總測驗題數</span><span>40 題</span></li>
+                    <li class="flex justify-between border-b-2 border-white pb-2"><span>建議時間</span><span>20 分鐘</span></li>
+                </ul>
+            </div>
+
+
+            <div class="analysis-card p-6 bg-emerald-50/30">
+                <h3 class="font-black text-lg mb-4 text-emerald-800"><i class="fas fa-chart-bar mr-2"></i> 核心領域</h3>
+                <div class="flex flex-wrap">
+                    <span class="topic-pill">物理化學基礎</span>
+                    <span class="topic-pill">工業安全常識</span>
+                </div>
+            </div>
+
+
+            <div class="analysis-card p-6 bg-amber-50/30">
+                <h3 class="font-black text-lg mb-4 text-amber-800"><i class="fas fa-lightbulb mr-2"></i> 指導亮點</h3>
+                <p class="text-xs font-bold leading-relaxed text-slate-600">
+                    測驗反映出學生對「物質定性常識」掌握度高。後續輔導將加強「定量換算」與「壓力單位轉換」的熟練度。
+                </p>
+            </div>
+        </div>
+
+
+        <section class="analysis-card p-8 bg-slate-900 text-amber-400">
+            <h3 class="text-2xl font-black mb-6">郭主任的教學叮嚀</h3>
+            <p class="text-sm leading-relaxed font-bold opacity-90">
+                「精確」是化學學習的首要條件。除了公式的背誦，理解背後的原理才是活化知識的關鍵。希望同學能藉此測驗檢視不足，持續在科學領域精進。
+            </p>
+            <div class="mt-10 text-right font-mono text-xs text-amber-200">
+                內農 總務主任 郭政郎 教師
+            </div>
+        </section>
+
+
+    </div>
+
+
+</body>
+</html>
